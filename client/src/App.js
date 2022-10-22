@@ -8,6 +8,7 @@ import FooterBar from "./components/FooterBar";
 
 // pages
 import Landing from "./pages/Landing";
+import MarketWatch from "./pages/MarketWatch";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/marketwatch" element={<MarketWatch />} />
       </Routes>
       <FooterBar />
     </div>

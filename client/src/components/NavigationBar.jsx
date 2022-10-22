@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
 // images
 import NavLogo from "../imgs/logoIcon.png";
@@ -22,8 +21,12 @@ const NavigationBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto mb-2 mb-lg-0 gap-3">
-            <Nav.Link href="#home">Wolf Vision</Nav.Link>
-            <Nav.Link href="#link">Wolf Market Watch</Nav.Link>
+            <Nav.Link href="#home">
+              <Link to="/wolfvision">Wolf Vision</Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link to="/marketwatch">Wolf Market Watch</Link>
+            </Nav.Link>
             <Nav.Link
               href="#link"
               className="rounded-3 text-center bg-warning px-3"
