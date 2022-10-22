@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 
 // components
 import NavigationBar from "./components/NavigationBar";
+import FooterBar from "./components/FooterBar";
 
 // pages
 import Landing from "./pages/Landing";
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
       </Routes>
+      <FooterBar />
     </div>
   );
 }
