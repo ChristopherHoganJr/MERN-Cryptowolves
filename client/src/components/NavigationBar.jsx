@@ -21,20 +21,22 @@ const NavigationBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto mb-2 mb-lg-0 gap-3">
-            <Nav.Link href="#home">
-              <Link to="/wolfvision">Wolf Vision</Link>
+            <Nav.Link as={Link} to="/wolfvision">
+              Wolf Vision
             </Nav.Link>
-            <Nav.Link>
-              <Link to="/marketwatch">Wolf Market Watch</Link>
+            <Nav.Link as={Link} to="/marketwatch">
+              Wolf Market Watch
             </Nav.Link>
             <Nav.Link
-              href="#link"
+              as={Link}
+              to="/signup"
               className="rounded-3 text-center bg-warning px-3"
             >
               Sign Up
             </Nav.Link>
             <Nav.Link
-              href="#link"
+              as={Link}
+              to="/login"
               className="bg-success text-center rounded-3 text-light px-3"
             >
               Login

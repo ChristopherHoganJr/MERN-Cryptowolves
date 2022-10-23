@@ -11,7 +11,7 @@ import AdaIcon from "../../imgs/adaIcon.png";
 
 const IconBelt = () => {
   return (
-    <div class="my-5">
+    <div className="my-5">
       <div className="d-flex justify-content-center gap-2 justify-content-md-between">
         <img src={BitcoinIcon} alt="" />
         <img src={BscIcon} alt="" />

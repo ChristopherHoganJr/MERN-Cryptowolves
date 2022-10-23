@@ -2,16 +2,18 @@ import React from "react";
 
 // bootstrap imports
 import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const FooterBar = () => {
   return (
-    <footer class="border-top mt-3">
+    <footer className="border-top mt-3">
       <Container>
-        <div class="row">
-          <div class="col text-center my-4">
+        <Row>
+          <Col className="text-center my-4">
             <h4>&copy; Christopher Hogan Jr</h4>
-          </div>
-        </div>
+          </Col>
+        </Row>
       </Container>
     </footer>
   );

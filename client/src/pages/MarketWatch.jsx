@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
+
+// bootstrap imports
+import Container from "react-bootstrap/Container";
+
+// components
+import CoinSelector from "../components/MW/CoinSelector";
+import MarketChart from "../components/MW/MarketChart";
 
 const MarketWatch = () => {
+  let [currentCoin, setCurrentCoin] = useState("bitcoin");
+
+  let changeCurrentCoin = (coinName) => {
+    setCurrentCoin(coinName);
+  };
+
   return (
-    <div>
+    <Container>
       <h1>Market Watch</h1>
-    </div>
+      <CoinSelector changeCurrentCoin={changeCurrentCoin} />
+      <MarketChart currentCoin={currentCoin} />
+    </Container>
   );
 };
 

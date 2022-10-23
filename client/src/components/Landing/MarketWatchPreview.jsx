@@ -16,9 +16,9 @@ const MarketWatchPreview = () => {
       </h2>
       <Row className="d-flex gap-3">
         <Col className="h-auto d-flex justify-content-center">
-          <img class="landing-market" src={WolfDiscussionPreview} alt="" />
+          <img className="landing-market" src={WolfDiscussionPreview} alt="" />
         </Col>
-        <Col class="pb-5">
+        <Col className="pb-5">
           <h3 className="text-center">Let's make some money $$</h3>
           <p>
             Everyone knows making money is hard alone. With out platform, we
